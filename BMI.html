@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        BMI calculator
+        </title>
+    <style>
+        
+        body{
+            background-color: rgb(255, 127, 178);
+        }
+        h4{
+            color:black
+        }
+        p{
+            color: rgb(6, 6, 6);
+        }
+        #btn{
+            color:green;
+        }
+        .button{
+            background-color: #04AA6D;
+        }
+        #compare{
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+<div>
+    <h2>BMI COMPARATOR</h2>
+    <br>
+    <h3><label for="name1">First Person Name 😄:</label><input type="text" id="name1" placeholder="Enter the name"/>
+      <label for="name2">Second Person Name 😄:</label><input type="text" id="name2" placeholder="Enter the name"/></h3>
+      
+    <h3> Enter the first person height</h3>
+    <input type="number" id="height1" placeholder="height in meter"/>
+    <h3> Enter the first person mass</h3>
+    <input type="number" id="mass1" placeholder="height in meter"/>
+    <h3> Enter the second person height</h3>
+    <input type="number" id="height2" placeholder="mass in kg"/>
+    <h3> Enter the second person mass</h3>
+    <input type="number" id="mass2" placeholder="mass in kg"/>
+    <br>
+    <br>
+    <button id="btn" class="button" style="color: #000;" onclick="BMI()">SUBMIT</button>
+    <h4 id="compare"></h4>
+
+    <h3 id="result"></h3>
+    
+</div>
+    <script>
+        function BMI(){
+       var h1= document.getElementById("height1");
+       var h2= document.getElementById("height2");
+       var w1= document.getElementById("mass1");
+       var w2= document.getElementById("mass2");
+       var result = document.getElementById("result");
+
+       var height1 = parseFloat(h1.value);
+       var height2 = parseFloat(h2.value);
+       var mass1 = parseFloat(w1.value);
+       var mass2 = parseFloat(w2.value);
+
+       if(isNaN(height1) || isNaN(height2) || isNaN(mass1)||isNaN(mass2)){
+        result.innerHTML = "Please Enter the Valid input";
+        return;
+       }
+       
+        
+       var BMI1 = mass1/(height1*height1);
+       var BMI2 = mass2/(height2*height2);
+       var name1 = document.getElementById("name1").value;
+       var name2 = document.getElementById("name2").value;
+       
+       
+       compare.innerHTML = "BMI of First Person is "+BMI1.toFixed(3)+" BMI of Second Person is "+BMI2.toFixed(3);
+    
+       var markHigherBMI = BMI1>BMI2;
+       if(markHigherBMI){
+        result.innerHTML = name1+" has the high BMI";
+    }
+    else{
+        result.innerHTML = name2+" has the high BMI";
+    }
+   
+
+    }
+
+
+
+
+
+    </script>
+</center>
+
+</body>
+</html>
