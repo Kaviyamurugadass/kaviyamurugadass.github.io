@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            creating#3buttons#usingclass
+        </title>
+        <meta name="viewport" width="device-width", initial-scale="1.0">
+        <style>
+            body{
+                background-color: azure;
+            }
+            .btn{
+                width: 200px;
+                height: 50px;
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+            .btn:hover{
+                width: 210px;
+                height: 60px;
+                box-shadow: 0 12px 16px;      
+            }
+            .btn:active{
+                box-shadow: 0 5px;
+                transform: translateY(4px);
+            }
+            #btn1{
+                /* color: green; */
+                background-color: rgb(132, 236, 132);
+                border-radius: 12px;
+                font-size: 20;
+            }
+            #btn2{
+                /* color: red; */
+                background-color: pink;
+                border-radius: 12px;
+                font-size: 20;
+            }
+            #btn3{
+                /* color: rgb(208, 208, 40); */
+                background-color: lightyellow;
+                border-radius: 12px;
+                font-size: 20;
+                
+            }
+        </style>
+    </head>
+    <center>
+    <body>
+        <h2>BACKGROUND COLOUR CHANGING BUTTON</h2>
+        <b><h1 id="green"  class="green"></h1></b>
+        
+        
+        <h3></h3>
+        <button type="button" id="btn1" class="btn" onclick="green()">Button1(💚Green)</button>
+        <h3></h3>
+   
+        <button type="button" id="btn2" class="btn" onclick="red()">Button2(❤️Red)</button>
+        <h3></h3>
+        <button type="button" id="btn3" class="btn" onclick="yellow()">Button3(💛Yellow)</button>
+    
+    
+       </body>
+    <script>
+        var result = document.querySelector(".green");
+    
+        function Change(color){
+           document.body.style.backgroundColor = color;
+        }
+
+        function green(){
+            Change('green');
+            result.innerHTML = "Green";   
+        }
+        function red(){
+            Change('red');
+            result.innerHTML = "Red";   
+        }
+        function yellow(){
+            Change('yellow');
+            result.innerHTML = "Yellow";   
+        }
+    </script>
+</center>
+</html>
