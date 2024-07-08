@@ -1,0 +1,35 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:purple;
+    border: 0cm;
+}
+h2{
+    text-align: right;
+}
+#output{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div{
+    width: auto;
+    
+}
+.F{
+    position: absolute;
+    top: 0;
+    right: 1;
+    padding: 10px;
+
+}
+.E{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+}
+/* #displayOutput{
+    text-align: center;
+    font-size: large;
+} */
