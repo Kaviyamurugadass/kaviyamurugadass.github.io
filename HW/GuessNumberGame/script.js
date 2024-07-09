@@ -46,7 +46,7 @@ function check(){
         return;
     }
 
-   document.getElementById("demo").innerHTML = "The random number is: "+rand;
+//    document.getElementById("demo").innerHTML = "The random number is: "+rand;
    document.getElementById("output").innerHTML = text;
    document.getElementById("output1").innerHTML = "Now You Have "+chance+" More Try";
   
