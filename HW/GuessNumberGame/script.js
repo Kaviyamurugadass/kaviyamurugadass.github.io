@@ -5,20 +5,20 @@ var chance = 10;
 
 document.querySelector(".restart").addEventListener('click', function(){
     window.location.reload();
+   
     // return false;
 });
+
 text="";
 function check(){
     chance = chance-1;
-    if(chance<=0){
-        document.getElementById("output").innerHTML = "🤕 YOUR LOST THE GAME 👎🏻<br>The random number is: "+rand;
-        document.getElementById("displayOutput").innerHTML = rand;
-        document.getElementById("output1").innerHTML = "No More try :(";
-        return;
-    }
+    
     var a=document.getElementById("num").value;
     // console.log(a);
-    document.getElementById("m").innerHTML = a;
+    // document.getElementById("m").innerHTML = a;
+    if(a===null){
+        text = "🥴Please enter the valid input";
+    }
     if(a<rand){
         text = "Sad,☹️ Your guess is too low";
     }
@@ -34,15 +34,22 @@ function check(){
         document.getElementById("output").innerHTML =  "🤩 You won the match 🥳<br>The random number is: "+rand;
         document.getElementById("output1").innerHTML ="";
         document.getElementById("ans").innerHTML = rand;
-        document.getElementById("scoure").innerHTML = "Your Score:"+chance;
+        document.getElementById("score").innerHTML = "Your Score:"+chance+"<br>High Score:9";
 
 
+        return;
+    }
+    if(chance<=0){
+        document.getElementById("output").innerHTML = "🤕 YOUR LOST THE GAME 👎🏻<br>The random number is: "+rand;
+        document.getElementById("output1").innerHTML = "No More try :(";
+        document.getElementById("ans").innerHTML = rand;
         return;
     }
 
    document.getElementById("demo").innerHTML = "The random number is: "+rand;
    document.getElementById("output").innerHTML = text;
    document.getElementById("output1").innerHTML = "Now You Have "+chance+" More Try";
+  
 
 }
 
