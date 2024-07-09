@@ -46,7 +46,6 @@ function check(){
         return;
     }
 
-//    document.getElementById("demo").innerHTML = "The random number is: "+rand;
    document.getElementById("output").innerHTML = text;
    document.getElementById("output1").innerHTML = "Now You Have "+chance+" More Try";
   
@@ -56,4 +55,6 @@ function check(){
 function clue(){
     
     document.querySelector(".clue").innerHTML = "//Number between 0 to 10//";
+    //    document.getElementById("demo").innerHTML = "The random number is: "+rand;
+
 }
