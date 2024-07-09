@@ -25,6 +25,7 @@ h2{
 }
 .F{
     position: absolute;
+   
     top: 0;
     right: 1;
     padding: 10px;
@@ -32,6 +33,7 @@ h2{
 }
 .E{
     position: absolute;
+    
     top: 0;
     left: 0;
     padding: 10px;
@@ -45,16 +47,23 @@ h2{
     font-size: large;
 }
 @media screen and (max-width:600px){
-    body{
-        background-color: plum;
-    }
+   
     .btn,.restart{
         border: 1px;
         border-radius: 6px;
         width: 100px;
         height: 25px;
-        font-size: medium;
+        font-size: large;
     }
+    .F{
+      
+        position: relative;
     
+    }
+    .E{
+        position: relative;
+       
+   
+    }
 }
     
