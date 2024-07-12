@@ -70,6 +70,7 @@
         max-width: 50%;
         padding: 10px 10px;
     }
+   
 
     /* .trash-button{
            
@@ -129,15 +130,18 @@
 
             function remov(event) {
                 const classname = event.target.className;
-                // const e = event.target.parentElement.parentElement;
-                // console.log(e);
+                // console.log(event.target.parentElement.parentElement)
+                
                 if(classname=="fa-solid fa-trash")
               {
                 event.target.parentElement.parentElement.remove();
+                return;
               }
               else{
-                 
+                //for a strike a line 
+                event.target.parentElement.innerHTML = "<del>"+event.target.parentElement.innerHTML+"</del>"
               }
+            //   event.target.parentElement.innerHTML;
             }
         </script>
         </div>
