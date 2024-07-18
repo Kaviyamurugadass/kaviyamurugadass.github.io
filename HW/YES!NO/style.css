@@ -7,16 +7,15 @@
     font-family:'Poppins',sans-serif;
 }
 body{
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100vh; /* 100% */
     background: #ffff;
 }
 #yn{
+    color: green;
     text-align: center;
-    top:-20px;
-    position: absolutes;
 }
 .container{
     top:150px;
