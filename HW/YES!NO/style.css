@@ -14,8 +14,11 @@ body{
     background: #ffff;
 }
 #yn{
-    color: green;
+    color: rgb(128, 66, 0);
     text-align: center;
+    font-size: 70px;
+    font-weight: 750;
+    /* text-shadow: 3px 5px 2px black; */
 }
 .container{
     top:150px;
