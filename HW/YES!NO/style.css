@@ -11,7 +11,16 @@ body{
     justify-content: center;
     align-items: center;
     min-width: 100vh; /* 100% */
-    background: #ffff;
+    background: gainsboro;
+}
+@media only screen and (max-width: 600px) {
+    .yes{
+        content: " Meow";
+        text-align: center;
+        font-weight: 400;
+        color: azure;
+        /* text-shadow: 3px 5px 2px black; */
+    }
 }
 #yn{
     color: rgb(128, 66, 0);
@@ -68,9 +77,9 @@ body{
    background: black;
    border-radius: 50%;
    overflow: hidden;
-   box-shadow: 0 0 0 5px #333,
+   box-shadow: 0 0 0 6px #333,
    0 0 0 15px #fff,
-   0 0 0 18px #111;
+   0 0 0 16px #111;
    transition: transform 5s ease-in-out;/*time delay*/
 }
 .container .wheel .yn{
@@ -80,7 +89,7 @@ body{
     background: var(--color);
     transform-origin: bottom right;
     transform: rotate(calc(60deg* var(--num)));/*360/6*/
-    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0 0, 73% 0, 100% 100%, 0 70%);
     display:flex;
     justify-content: center;
     align-items: center;
