@@ -12,7 +12,7 @@ export default ()=>{
 };
 export const ARRAY_OBJ = [{
     num: '1',
-    color: '"#00ff00"',
+    color: "#00ff00",
     child: 'YES',
 },
 {

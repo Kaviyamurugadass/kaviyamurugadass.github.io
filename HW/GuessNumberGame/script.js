@@ -6,7 +6,6 @@ var chance = 10;
 document.querySelector(".restart").addEventListener('click', function(){
     window.location.reload();
    
-    // return false;
 });
 
 text="";
