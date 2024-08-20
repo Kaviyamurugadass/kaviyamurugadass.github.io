@@ -5,7 +5,7 @@ import YesNO  from './components/YesNO.jsx';
 
 export default function App() {
   return (
-    <div>
+    <div className = 'container'>
      <MyHeader />
 <div className="w3-display-middle">
     
