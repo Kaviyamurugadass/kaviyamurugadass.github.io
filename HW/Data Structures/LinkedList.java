@@ -144,7 +144,8 @@ public class LinkedList
         }
         else if (head.data == old)  //delete @ head
         { 
-            head = head.next;   
+            head = head.next;
+            insert = head;   
         }
         if (head.data > newNode.data)  //insert @ head
         { 
